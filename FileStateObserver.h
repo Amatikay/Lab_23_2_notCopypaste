@@ -6,21 +6,6 @@
 #define LAB_23_2_NOTCOPYPASTE_FILESTATEOBSERVER_H
 
 //конкретный класс, который реализует интерфейс Observer.
-
-
-
-
-
-
-
-
-//
-//class FileStateObserver: public Observer<FileState> {
-//    ~FileStateObserver(){};
-//    void notification(FileState *data) override; // переопределение виртуальной фкнцции в базовм классе
-//};
-
-
 #include "Observer.h"
 #include "Observable.h"
 
@@ -32,6 +17,7 @@ public:
         object->addObserver(this);
     }
     void notification(const FileState* fileState) override;
+    void onFileChanged(const FileState* fileState);
 };
 
 

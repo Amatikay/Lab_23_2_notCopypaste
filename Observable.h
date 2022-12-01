@@ -8,11 +8,8 @@
 
 #include "Observer.h"
 // наблюдаемый
-//интерфейс, определяющий методы для добавления, удаления и оповещения наблюдателей;
-// ObserverClass — тот, кто наблюдает
-// ObserverDataClass — тип данных, которым мы будем уведомлять ObserverClass
+//интерфейс, определяющий методы для добавления и оповещения наблюдателей;
 // с помощью метода notify
-
 
 class Observable{
 public:
@@ -25,14 +22,6 @@ public:
 
 
 
-//template <class ObserverClass, class ObserverDataClass>
-//class Observable {
-//public:
-//    virtual void addObserver(Observer<ObserverDataClass> *observer) = 0;
-//    virtual ~Observable(){};
-//protected:
-//    virtual void    notify(ObserverDataClass *data) = 0;//передача сообщения
-//};
 
 
 #endif //LAB_23_2_NOTCOPYPASTE_OBSERVABLE_H

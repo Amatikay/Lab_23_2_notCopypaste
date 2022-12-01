@@ -26,9 +26,11 @@
 //}
 #include "FileStateObserver.h"
 
- void FileStateObserver::notification(const FileState* fileState) {
+void FileStateObserver::notification(const FileState* fileState) {
     if( fileState->exist ){
         std::cout<<"File Exist"<<std::endl;
     }
+}
+void FileStateObserver::onFileChanged(const FileState *fileState) {
 
 }

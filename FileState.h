@@ -23,7 +23,7 @@ struct FileState {
 //    }
     bool exist;
     int size;
-    std::string path;
+    const char* path;
 };
 
 #endif //LAB_23_2_NOTCOPYPASTE_FILESTATE_H
