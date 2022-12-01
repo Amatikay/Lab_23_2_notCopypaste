@@ -8,13 +8,32 @@
 //конкретный класс, который реализует интерфейс Observer.
 
 
-#include "Observer.h"
-#include "NotificationData.h"
 
-class FileStateObserver: public Observer<FileState> {
-    ~FileStateObserver(){};
-    void notification(FileState *data) override; // переопределение виртуальной фкнцции в базовм классе
+
+
+
+
+
+//
+//class FileStateObserver: public Observer<FileState> {
+//    ~FileStateObserver(){};
+//    void notification(FileState *data) override; // переопределение виртуальной фкнцции в базовм классе
+//};
+
+
+#include "Observer.h"
+#include "Observable.h"
+
+class FileStateObserver: public Observer{
+private:
+    Observable* file;
+public:
+    FileStateObserver(Observable* object):file(object){
+        object->addObserver(this);
+    }
+    void notification(const FileState* fileState) override;
 };
+
 
 
 #endif //LAB_23_2_NOTCOPYPASTE_FILESTATEOBSERVER_H
