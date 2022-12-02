@@ -13,11 +13,10 @@ class FileStateObserver: public Observer{
 private:
     Observable* file;
 public:
-    FileStateObserver(Observable* object):file(object){
+    explicit FileStateObserver(Observable* object):file(object){
         object->addObserver(this);
     }
-    void notification(const FileState* fileState) override;
-    void onFileChanged(const FileState* fileState);
+    void notification(const FileState* fileState,const FileState* fileState0) override;
 };
 
 

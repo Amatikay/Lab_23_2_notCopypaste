@@ -27,6 +27,11 @@ FileStateObservable::FileStateObservable(const char *path) {
 }
 //TODO:Потороение кода, исправить
 void FileStateObservable::updateData( const char* path) {
+    fileState_t_minus_1 = fileState;
+//    std::cout<<"Start Block for check fileState"<<std::endl;
+//    fileState_t_minus_1.Print();
+//    fileState.Print();
+//    std::cout<<"End Block for check fileState"<<std::endl;
     std::ifstream file;
     file.open(path);
     if (file){//существует
@@ -42,17 +47,15 @@ void FileStateObservable::updateData( const char* path) {
         fileState.path = path;
         fileState.size = 0;
     }
+
     notify();
 }
 void FileStateObservable::addObserver(Observer *observer) {
     observers.push_back(observer);
 }
-//TODO: Красным выделяет. Не знаю в чем проблема. Но по сути мне это и не нужно
-//void FileStateObservable::removeObserver(Observer *observer) {
-//    observers.erase(remove(observers.begin(),observers.end(),observer),observers.end());
-//}
+
 void FileStateObservable::notify() {
     for (auto observer: observers) {
-        observer->notification(&fileState);
+        observer->notification(&fileState,&fileState_t_minus_1);
     }
 }

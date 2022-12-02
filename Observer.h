@@ -12,7 +12,7 @@
 class Observer {
 public:
     virtual ~Observer(){};
-    virtual void notification(const FileState *data) = 0;//получение сообщения
+    virtual void notification(const FileState *data,const FileState *data0) = 0;//получение сообщения
 
 };
 

@@ -15,11 +15,12 @@ class FileStateObservable: public Observable{
 private:
     std::vector<Observer*> observers;
     FileState fileState;
+    FileState fileState_t_minus_1;
 public:
-    FileStateObservable(const char *path); // какие то поля и он чет ругается
+   explicit FileStateObservable(const char *path);
     void updateData( const char* path);
+
     void addObserver(Observer *observer) override;
-    //void removeObserver(Observer *observer) override;
     void notify() override;
 
 };

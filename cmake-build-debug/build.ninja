@@ -55,18 +55,6 @@ build CMakeFiles/Lab_23_2_notCopypaste.dir/main.cpp.o: CXX_COMPILER__Lab_23_2_no
   OBJECT_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
   OBJECT_FILE_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
 
-build CMakeFiles/Lab_23_2_notCopypaste.dir/Observable.cpp.o: CXX_COMPILER__Lab_23_2_notCopypaste_Debug /home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste/Observable.cpp || cmake_object_order_depends_target_Lab_23_2_notCopypaste
-  DEP_FILE = CMakeFiles/Lab_23_2_notCopypaste.dir/Observable.cpp.o.d
-  FLAGS = -g -std=gnu++23
-  OBJECT_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
-
-build CMakeFiles/Lab_23_2_notCopypaste.dir/Observer.cpp.o: CXX_COMPILER__Lab_23_2_notCopypaste_Debug /home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste/Observer.cpp || cmake_object_order_depends_target_Lab_23_2_notCopypaste
-  DEP_FILE = CMakeFiles/Lab_23_2_notCopypaste.dir/Observer.cpp.o.d
-  FLAGS = -g -std=gnu++23
-  OBJECT_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
-
 build CMakeFiles/Lab_23_2_notCopypaste.dir/FileStateObserver.cpp.o: CXX_COMPILER__Lab_23_2_notCopypaste_Debug /home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste/FileStateObserver.cpp || cmake_object_order_depends_target_Lab_23_2_notCopypaste
   DEP_FILE = CMakeFiles/Lab_23_2_notCopypaste.dir/FileStateObserver.cpp.o.d
   FLAGS = -g -std=gnu++23
@@ -79,12 +67,6 @@ build CMakeFiles/Lab_23_2_notCopypaste.dir/FileStateObservable.cpp.o: CXX_COMPIL
   OBJECT_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
   OBJECT_FILE_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
 
-build CMakeFiles/Lab_23_2_notCopypaste.dir/FileState.cpp.o: CXX_COMPILER__Lab_23_2_notCopypaste_Debug /home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste/FileState.cpp || cmake_object_order_depends_target_Lab_23_2_notCopypaste
-  DEP_FILE = CMakeFiles/Lab_23_2_notCopypaste.dir/FileState.cpp.o.d
-  FLAGS = -g -std=gnu++23
-  OBJECT_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Lab_23_2_notCopypaste
@@ -93,7 +75,7 @@ build CMakeFiles/Lab_23_2_notCopypaste.dir/FileState.cpp.o: CXX_COMPILER__Lab_23
 #############################################
 # Link the executable Lab_23_2_notCopypaste
 
-build Lab_23_2_notCopypaste: CXX_EXECUTABLE_LINKER__Lab_23_2_notCopypaste_Debug CMakeFiles/Lab_23_2_notCopypaste.dir/main.cpp.o CMakeFiles/Lab_23_2_notCopypaste.dir/Observable.cpp.o CMakeFiles/Lab_23_2_notCopypaste.dir/Observer.cpp.o CMakeFiles/Lab_23_2_notCopypaste.dir/FileStateObserver.cpp.o CMakeFiles/Lab_23_2_notCopypaste.dir/FileStateObservable.cpp.o CMakeFiles/Lab_23_2_notCopypaste.dir/FileState.cpp.o
+build Lab_23_2_notCopypaste: CXX_EXECUTABLE_LINKER__Lab_23_2_notCopypaste_Debug CMakeFiles/Lab_23_2_notCopypaste.dir/main.cpp.o CMakeFiles/Lab_23_2_notCopypaste.dir/FileStateObserver.cpp.o CMakeFiles/Lab_23_2_notCopypaste.dir/FileStateObservable.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Lab_23_2_notCopypaste.dir
   POST_BUILD = :
