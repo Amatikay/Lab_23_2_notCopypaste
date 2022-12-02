@@ -7,14 +7,10 @@
 
 
 //интерфейс, с помощью которого наблюдатель получает оповещение;
-
 #include "FileState.h"
 class Observer {
 public:
-    virtual ~Observer(){};
+    virtual ~Observer(){};//виртуальный деструктор
     virtual void notification(const FileState *data,const FileState *data0) = 0;//получение сообщения
-
 };
-
-
 #endif //LAB_23_2_NOTCOPYPASTE_OBSERVER_H

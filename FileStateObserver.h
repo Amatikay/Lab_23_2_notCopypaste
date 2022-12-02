@@ -16,9 +16,7 @@ public:
     explicit FileStateObserver(Observable* object):file(object){
         object->addObserver(this);
     }
-    void notification(const FileState* fileState,const FileState* fileState0) override;
+    void notification(const FileState* fileState,const FileState* fileState0) override;//реализация абстрактного
+                                                                                      //интерфейса у класса Observer
 };
-
-
-
 #endif //LAB_23_2_NOTCOPYPASTE_FILESTATEOBSERVER_H
