@@ -1,4 +1,0 @@
-/home/sergey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/sergey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/ninja/linux/ninja -G Ninja -S /home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste -B /home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste/cmake-build-debug

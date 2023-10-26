@@ -1,3 +1,0 @@
-/home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste/cmake-build-debug/CMakeFiles/Lab_23_2_notCopypaste.dir
-/home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sergey/Programing/C_or_C++_projects/Lab_23_2_notCopypaste/cmake-build-debug/CMakeFiles/rebuild_cache.dir
